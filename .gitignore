@@ -4,7 +4,7 @@ out/
 .metadata/
 .classpath/
 .project/
-*.class/
+*.class
 .idea/
 *.iml
 .vscode/
