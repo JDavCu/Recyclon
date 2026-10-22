@@ -1,7 +1,14 @@
 package org.zabalburu.app;
 
+import java.util.Scanner;
+
+import org.zabalburu.domine.Clientes;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+    
+        Scanner cs = new Scanner(System.in);
+        Clientes user1 = new Clientes(cs);
+
     }
 }
