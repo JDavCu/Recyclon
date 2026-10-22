@@ -9,6 +9,7 @@ public class Main {
     
         Scanner cs = new Scanner(System.in);
         Clientes user1 = new Clientes(cs);
-
+        Clientes user2 = new Clientes(cs);
+        
     }
 }
