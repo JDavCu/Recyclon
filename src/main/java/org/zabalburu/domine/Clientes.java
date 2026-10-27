@@ -23,51 +23,6 @@ public class Clientes {
 
     //El siguiente constructor es para una interacción base con el usuario mediante la clase Scanner
 
-    public Clientes(Scanner tecladoScanner){
-        System.out.println("----New account----");
-        System.out.println("-------------------");
-        System.out.print("Name: ");
-         String nombre = tecladoScanner.nextLine().trim();
-        while (nombre.isBlank() || nombre == null){
-            System.out.print("Este campo es obligatorio. Introduce el nombre: ");
-             nombre = tecladoScanner.nextLine().trim();
-        }
-        System.out.print("Last Name: ");
-        String apellidos = tecladoScanner.nextLine().trim();
-        while (apellidos.isBlank() || apellidos   == null){
-            System.out.print("Este campo es obligatorio. Introduce los apellidos: ");
-            apellidos = tecladoScanner.nextLine().trim();
-        }
-        System.out.print("Dni/Nie : ");
-         String dni_Nie = tecladoScanner.nextLine().trim();
-        while(dni_Nie.isBlank() || dni_Nie == null){
-            System.out.print("Este campo es obligatorio. Introduce el Dni/Nie: ");
-            dni_Nie = tecladoScanner.nextLine().trim();
-        }
-        System.out.println("Number Phone: ");
-        int telefono = verificarNumero(tecladoScanner);
-        }
-
-
-
-
-
-    
-
-    public static int verificarNumero(Scanner tecladoScanner){
-        while(true){
-            try{
-                int opcion = Integer.parseInt(tecladoScanner.nextLine().trim());
-                    if (opcion >1 && opcion <=9){
-                        return opcion;
-                    }
-                    
-                }catch(NumberFormatException e) {
-
-                }
-            System.out.print("Opcion no valida. Introduce el Numero de Telefono: ");
-        }
-    }
 
     public String getNombre() {
         return nombre;
