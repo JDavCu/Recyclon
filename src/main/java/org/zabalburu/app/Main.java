@@ -53,7 +53,7 @@ public class Main {
                 int opcion = Integer.parseInt(tecladoScanner.nextLine().trim());
                 String cantidad = Integer.toString(opcion);
                 
-                if (cantidad.length() > 1 && cantidad.length() <= 9) {
+                if (cantidad.length() > 2 && cantidad.length() <= 9) {
                     return opcion;
                 }
 
@@ -61,6 +61,8 @@ public class Main {
 
             }
             System.out.print("Opcion no valida. Introduce el Numero de Telefono: ");
+    
         }
-    }    
+    }
+
 }

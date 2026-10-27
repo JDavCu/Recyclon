@@ -1,8 +1,9 @@
 package org.zabalburu.domine;
 
-import java.util.Scanner;
+
 
 public class Clientes {
+    private static int Identificador;
     private String nombre;
     private String apellidos;
     private String dni_Nie;
@@ -20,6 +21,7 @@ public class Clientes {
         this.correo = correo;
         this.telefono = telefono;
         this.numeroDeCuenta = numeroDeCuenta;
+        Identificador++;
     }
 
     public void setNombre(String nombre) {
