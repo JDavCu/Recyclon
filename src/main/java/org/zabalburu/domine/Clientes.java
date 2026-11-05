@@ -12,10 +12,10 @@ public class Clientes {
     private int telefono;
     private String numeroDeCuenta;
 
-    public Clientes(String nombre, String apellido, String dni_Nie, String correo, int telefono,
+    public Clientes(String nombre, String apellidos, String dni_Nie, String correo, int telefono,
             String numeroDeCuenta) {
 
-        this.apellidos = apellido;
+        this.apellidos = apellidos;
         this.nombre = nombre;
         this.dni_Nie = dni_Nie;
         this.correo = correo;
