@@ -9,13 +9,13 @@ public class Main {
 
         Scanner tecladoScanner = new Scanner(System.in);
 
-        System.out.println("Ingresa en que banco quieres realizar la siguirnte operación:");
+        System.out.println("Ingresa en que banco quieres realizar la siguiente operación:");
         System.out.println("---------------------------------------------------------");
         System.out.print("Banco asociado: ");
         String Banco = tecladoScanner.nextLine().trim();
 
 
-        System.out.println("----Creacion Nueva Cuenta----");
+        System.out.println("----Creación de una nueva cuenta----");
         System.out.println("-----------------------------");
         System.out.print("Nombre: ");
         String nombre = tecladoScanner.nextLine();
