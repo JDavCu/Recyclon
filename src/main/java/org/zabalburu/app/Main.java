@@ -12,30 +12,41 @@ public class Main {
         System.out.println("Ingresa en que banco quieres realizar la siguiente operación:");
         System.out.println("---------------------------------------------------------");
         System.out.print("Banco asociado: ");
+
         String Banco = tecladoScanner.nextLine().trim();
 
-
-        System.out.println("----Creación de una nueva cuenta----");
+        System.out.println("---- Creación de una nueva cuenta ----");
         System.out.println("-----------------------------");
-        System.out.print("Nombre: ");
+        System.out.print("Introduzca su nombre: ");
         String nombre = tecladoScanner.nextLine();
         while (nombre.isBlank() || nombre == null) {
-            System.out.print("Este campo es obligatorio. Introduce el nombre: ");
+            System.out.print("""
+                            Este campo es obligatorio. 
+                            Introduzca el nombre: 
+                            """);
             nombre = tecladoScanner.nextLine();
         }
-        System.out.print("Apellidos: ");
+
+        System.out.print("Introduzca sus apellidos: ");
         String apellidos = tecladoScanner.nextLine();
         while (apellidos.isBlank() || apellidos == null) {
-            System.out.print("Este campo es obligatorio. Introduce los apellidos: ");
+            System.out.print("""
+                            Este campo es obligatorio. 
+                            Introduce los apellidos: 
+                            """);
             apellidos = tecladoScanner.nextLine();
         }
-        System.out.print("Dni/Nie : ");
+
+        System.out.print("Introduzca su Dni/Nie: ");
         String dni_Nie = tecladoScanner.nextLine().trim();
         while (dni_Nie.isBlank() || dni_Nie == null) {
-            System.out.print("Este campo es obligatorio. Introduce el Dni/Nie: ");
+            System.out.print("""
+                            Este campo es obligatorio. 
+                            Introduce el Dni/Nie: 
+                            """);
             dni_Nie = tecladoScanner.nextLine().trim();
         }
-        System.out.print("Telefono: ");
+        System.out.print("Introduzca su número de teléfono: ");
         int telefono = verificarNumero(tecladoScanner);
 
         System.out.print("Email: ");
