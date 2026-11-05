@@ -1,5 +1,5 @@
 package org.zabalburu.app;
-
+import org.zabalburu.domine.Banco;
 import java.util.Scanner;
 
 import org.zabalburu.domine.Clientes;
@@ -9,8 +9,14 @@ public class Main {
 
         Scanner tecladoScanner = new Scanner(System.in);
 
-        System.out.println("----Nueva Cuenta----");
-        System.out.println("-------------------");
+        System.out.println("Ingresa en que banco quieres realizar la siguiente operación:");
+        System.out.println("---------------------------------------------------------");
+        System.out.print("Banco asociado: ");
+        String Banco = tecladoScanner.nextLine().trim();
+
+
+        System.out.println("----Creación de una nueva cuenta----");
+        System.out.println("-----------------------------");
         System.out.print("Nombre: ");
         String nombre = tecladoScanner.nextLine();
         while (nombre.isBlank() || nombre == null) {
