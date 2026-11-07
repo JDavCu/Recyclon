@@ -7,12 +7,6 @@ import org.zabalburu.domine.Clientes;
 public class Main {
     public static void main(String[] args) {
 
-
-        
-
-
-
-
         Scanner tecladoScanner = new Scanner(System.in);
 
         System.out.println("Ingresa en que banco quieres realizar la siguiente operación:");
@@ -48,23 +42,28 @@ public class Main {
         while (dni_Nie.isBlank() || dni_Nie == null) {
             System.out.print("""
                             Este campo es obligatorio. 
-                            Introduce el Dni/Nie: 
+                            Introduzca su Dni/Nie: 
                             """);
             dni_Nie = tecladoScanner.nextLine().trim();
         }
         System.out.print("Introduzca su número de teléfono: ");
         int telefono = verificarNumero(tecladoScanner);
 
-        System.out.print("Email: ");
+        System.out.print("Introduzca su Email: ");
         String correo = tecladoScanner.nextLine().trim();
         while(correo.isBlank() || correo == null ){
-            System.out.print("Campo Obligatorio. Introduce el Email: ");
+            System.out.print("""
+                            Campo Obligatorio. 
+                            Introduzca su Email: 
+                            """);
             correo = tecladoScanner.nextLine().trim();
         }
-        System.out.print("NºCuenta: ");
+        System.out.print(" Introduzca su Número de Cuenta: ");
         String numeroDeCuenta = tecladoScanner.nextLine().trim();
         while(correo.isBlank() || correo == null ){
-            System.out.print("Campo Obligatorio. Introduce el NºCuenta: ");
+            System.out.print("""
+                            Campo Obligatorio. 
+                            Introduzca su Número de Cuenta: """);
             correo = tecladoScanner.nextLine().trim();
         }
         }
@@ -87,5 +86,5 @@ public class Main {
     
         }
     }
-
 }
+    
