@@ -3,10 +3,13 @@ import org.zabalburu.domine.Clientes;
 
 
 public class Banco {
+    private int NCuenta;
+    private int Telefono;
+    private String historial;
     private static String direccion;
     private static String nombre;
     private static int IDBanco;
-    
+
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
