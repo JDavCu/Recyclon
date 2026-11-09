@@ -11,7 +11,8 @@ public class PantallaNuevoCliente {
 
     public PantallaNuevoCliente() {
         this.visor = new VisorImagenes();
-        visor.establecerTamaño(36, 16);
+        visor.establecerTamaño(18, 8);
+        visor.alinearIzquierda();
         
     }
 
@@ -62,10 +63,13 @@ public class PantallaNuevoCliente {
                 40,
                 TerminalANSI.BOLD + TerminalANSI.CYAN + "Nuevo Cliente" + TerminalANSI.RESET);
                 
-                dibujarMarco();
-        
+                escribir(5, 4, "");
                 System.out.flush();
                 visor.mostrar("imagenespro/cliente.png");
+                
+                dibujarMarco();
+                
+                
             }
 
     public static void main(String[] args) {
