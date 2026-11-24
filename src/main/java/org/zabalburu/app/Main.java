@@ -9,61 +9,45 @@ public class Main {
 
         Scanner tecladoScanner = new Scanner(System.in);
 
-        System.out.println("Ingresa en que banco quieres realizar la siguiente operación:");
+        System.out.println("Ingresa en que banco quieres realizar la siguirnte operación:");
         System.out.println("---------------------------------------------------------");
         System.out.print("Banco asociado: ");
-
         String Banco = tecladoScanner.nextLine().trim();
 
-        System.out.println("---- Creación de una nueva cuenta ----");
+
+        System.out.println("----Creacion Nueva Cuenta----");
         System.out.println("-----------------------------");
-        System.out.print("Introduzca su nombre: ");
+        System.out.print("Nombre: ");
         String nombre = tecladoScanner.nextLine();
         while (nombre.isBlank() || nombre == null) {
-            System.out.print("""
-                            Este campo es obligatorio. 
-                            Introduzca el nombre: 
-                            """);
+            System.out.print("Este campo es obligatorio. Introduce el nombre: ");
             nombre = tecladoScanner.nextLine();
         }
-
-        System.out.print("Introduzca sus apellidos: ");
+        System.out.print("Apellidos: ");
         String apellidos = tecladoScanner.nextLine();
         while (apellidos.isBlank() || apellidos == null) {
-            System.out.print("""
-                            Este campo es obligatorio. 
-                            Introduce los apellidos: 
-                            """);
+            System.out.print("Este campo es obligatorio. Introduce los apellidos: ");
             apellidos = tecladoScanner.nextLine();
         }
-
-        System.out.print("Introduzca su Dni/Nie: ");
+        System.out.print("Dni/Nie : ");
         String dni_Nie = tecladoScanner.nextLine().trim();
         while (dni_Nie.isBlank() || dni_Nie == null) {
-            System.out.print("""
-                            Este campo es obligatorio. 
-                            Introduzca su Dni/Nie: 
-                            """);
+            System.out.print("Este campo es obligatorio. Introduce el Dni/Nie: ");
             dni_Nie = tecladoScanner.nextLine().trim();
         }
-        System.out.print("Introduzca su número de teléfono: ");
+        System.out.print("Telefono: ");
         int telefono = verificarNumero(tecladoScanner);
 
-        System.out.print("Introduzca su Email: ");
+        System.out.print("Email: ");
         String correo = tecladoScanner.nextLine().trim();
         while(correo.isBlank() || correo == null ){
-            System.out.print("""
-                            Campo Obligatorio. 
-                            Introduzca su Email: 
-                            """);
+            System.out.print("Campo Obligatorio. Introduce el Email: ");
             correo = tecladoScanner.nextLine().trim();
         }
-        System.out.print(" Introduzca su Número de Cuenta: ");
+        System.out.print("NºCuenta: ");
         String numeroDeCuenta = tecladoScanner.nextLine().trim();
         while(correo.isBlank() || correo == null ){
-            System.out.print("""
-                            Campo Obligatorio. 
-                            Introduzca su Número de Cuenta: """);
+            System.out.print("Campo Obligatorio. Introduce el NºCuenta: ");
             correo = tecladoScanner.nextLine().trim();
         }
         }
@@ -86,5 +70,5 @@ public class Main {
     
         }
     }
+
 }
-    
