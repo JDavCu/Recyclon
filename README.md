@@ -5,7 +5,7 @@
    
   **_Responsabilidades 2_**
 
-   # Realizar los pasos de abajo antes de iniciar a trabajar.
+   Realizar los pasos de abajo antes de iniciar a trabajar.
 
   ### RECORDAR
     
